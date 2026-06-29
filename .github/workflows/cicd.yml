@@ -25,10 +25,8 @@ jobs:
         run: echo "Testing the App"
 
   deploy:
-     needs : [build,test]
+    needs: [build, test]
     runs-on: ubuntu-latest
     steps:
       - name: Deploying on machine
         run: echo "Deploying code"
-      
-
